@@ -4,7 +4,7 @@
 
 ## Стек
 
-- React 18 + TypeScript
+- React 19 + TypeScript
 - Vite
 - React Router
 - Vitest + Testing Library
@@ -36,6 +36,10 @@ npm run lint:fix
 
 npm run test
 npm run test:coverage -w packages/shared-ui
+
+Для разработки библиотеки компонентов в режиме проверки изменений:
+
+npm run dev -w packages/shared-ui
 
 ## Cкриншоты
 

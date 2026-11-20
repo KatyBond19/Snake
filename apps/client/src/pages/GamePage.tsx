@@ -1,3 +1,4 @@
+import type { ReactElement } from 'react'
 import { useParams } from 'react-router-dom'
 import { ScoreBoard } from '@snake/shared-ui'
 import type { PlayerScore } from '@snake/shared-ui'
@@ -8,7 +9,7 @@ const DEMO_PLAYERS: PlayerScore[] = [
   { id: '2', name: 'Соперник', score: 2 }
 ]
 
-export function GamePage(): JSX.Element {
+export function GamePage(): ReactElement {
   const { roomId } = useParams<{ roomId: string }>()
 
   return (

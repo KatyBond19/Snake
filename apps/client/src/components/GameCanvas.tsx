@@ -1,9 +1,11 @@
+import type { ReactElement } from 'react'
+
 interface GameCanvasProps {
   width: number
   height: number
 }
 
-export function GameCanvas({ width, height }: GameCanvasProps): JSX.Element {
+export function GameCanvas({ width, height }: GameCanvasProps): ReactElement {
   return (
     <canvas
       width={width}

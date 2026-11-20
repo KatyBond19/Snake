@@ -1,3 +1,5 @@
+import type { ReactElement } from 'react'
+
 export interface PlayerScore {
   id: string
   name: string
@@ -8,7 +10,7 @@ interface ScoreBoardProps {
   players: PlayerScore[]
 }
 
-export function ScoreBoard({ players }: ScoreBoardProps): JSX.Element {
+export function ScoreBoard({ players }: ScoreBoardProps): ReactElement {
   const sorted = [...players].sort((a, b) => b.score - a.score)
 
   return (

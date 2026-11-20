@@ -1,8 +1,9 @@
+import type { ReactElement } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@snake/shared-ui'
 
-export function LobbyPage(): JSX.Element {
+export function LobbyPage(): ReactElement {
   const [roomId] = useState('room-1')
 
   return (
