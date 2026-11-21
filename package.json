@@ -1,0 +1,21 @@
+{
+  "name": "multiplayer-snake",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/client",
+    "build": "npm run build -w apps/client && npm run build -w packages/shared-ui",
+    "lint": "npm run lint -w apps/client && npm run lint -w packages/shared-ui",
+    "test": "npm run test -w apps/client && npm run test -w packages/shared-ui",
+    "test:coverage": "npm run test:coverage -w apps/client && npm run test:coverage -w packages/shared-ui"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.73.0",
+    "@typescript-eslint/parser": "^8.73.0"
+  }
+}
