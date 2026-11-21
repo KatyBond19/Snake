@@ -1,8 +1,7 @@
 import type { RouteObject } from 'react-router-dom'
-
-import { GamePage } from './pages/GamePage'
 import { HomePage } from './pages/HomePage'
 import { LobbyPage } from './pages/LobbyPage'
+import { GamePage } from './pages/GamePage'
 import { NotFoundPage } from './pages/NotFoundPage'
 
 export const routes: RouteObject[] = [

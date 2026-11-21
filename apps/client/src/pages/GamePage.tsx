@@ -1,8 +1,7 @@
-import { ScoreBoard } from '@snake/shared-ui'
-import type { PlayerScore } from '@snake/shared-ui'
 import type { ReactElement } from 'react'
 import { useParams } from 'react-router-dom'
-
+import { ScoreBoard } from '@snake/shared-ui'
+import type { PlayerScore } from '@snake/shared-ui'
 import { GameCanvas } from '../components/GameCanvas'
 
 const DEMO_PLAYERS: PlayerScore[] = [
