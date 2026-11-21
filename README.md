@@ -9,11 +9,14 @@
 - React Router
 - Vitest + Testing Library
 - ESLint
+- Node.js + ws (авторитетный игровой сервер)
 - npm workspaces (монорепо)
 
 ## Структура
-apps/client — основное приложение
-packages/shared-ui — библиотека общих компонентов
+- `apps/client` — браузерное приложение
+- `apps/server` — WebSocket-сервер и серверная игровая логика
+- `packages/shared-types` — общий протокол и типы состояния
+- `packages/shared-ui` — библиотека общих компонентов
 
 ## Установка
 

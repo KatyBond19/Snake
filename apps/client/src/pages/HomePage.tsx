@@ -1,6 +1,6 @@
+import { Button } from '@snake/shared-ui'
 import type { ReactElement } from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '@snake/shared-ui'
 
 export function HomePage(): ReactElement {
   return (
