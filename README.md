@@ -7,13 +7,15 @@
 - React 19 + TypeScript
 - Vite
 - React Router
+- Сервер авторитетной игровой логики на Node.js (MVP)
 - Vitest + Testing Library
 - ESLint
 - npm workspaces (монорепо)
 
 ## Структура
-apps/client — основное приложение
-packages/shared-ui — библиотека общих компонентов
+- `apps/client` — основное приложение
+- `apps/server` — авторитетный игровой сервер (MVP)
+- `packages/shared-ui` — библиотека общих компонентов
 
 ## Установка
 
@@ -27,7 +29,7 @@ npm run dev
 
 npm run build
 
-## Линтинг (в каждом проекте)
+## Линтинг
 
 npm run lint
 npm run lint:fix
