@@ -9,11 +9,12 @@
   ],
   "scripts": {
     "dev": "npm run dev -w apps/client",
-    "build": "npm run build -w apps/client && npm run build -w packages/shared-ui",
-    "lint": "npm run lint -w apps/client && npm run lint -w packages/shared-ui",
-    "lint:fix": "npm run lint:fix -w apps/client && npm run lint:fix -w packages/shared-ui",
-    "test": "npm run test -w apps/client && npm run test -w packages/shared-ui",
-    "test:coverage": "npm run test:coverage -w apps/client && npm run test:coverage -w packages/shared-ui"
+    "dev:server": "npm run dev -w apps/server",
+    "build": "npm run build -w packages/shared-types && npm run build -w apps/client && npm run build -w packages/shared-ui && npm run build -w apps/server",
+    "lint": "npm run lint -w apps/client && npm run lint -w packages/shared-ui && npm run lint -w packages/shared-types && npm run lint -w apps/server",
+    "lint:fix": "npm run lint:fix -w apps/client && npm run lint:fix -w packages/shared-ui && npm run lint:fix -w packages/shared-types && npm run lint:fix -w apps/server",
+    "test": "npm run test -w apps/client && npm run test -w packages/shared-ui && npm run test -w packages/shared-types && npm run test -w apps/server",
+    "test:coverage": "npm run test:coverage -w apps/client && npm run test:coverage -w packages/shared-ui && npm run test:coverage -w packages/shared-types && npm run test:coverage -w apps/server"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
@@ -22,7 +23,7 @@
     "eslint": "^9.39.5",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^16.5.0"
   }
 }

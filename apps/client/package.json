@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predev": "npm run build -w @snake/shared-types",
     "dev": "vite",
+    "prebuild": "npm run build -w @snake/shared-types",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
@@ -13,6 +15,7 @@
   },
   "dependencies": {
     "@snake/shared-ui": "*",
+    "@snake/shared-types": "*",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.6"
